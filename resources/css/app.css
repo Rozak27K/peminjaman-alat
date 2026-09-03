@@ -1,0 +1,247 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+body {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: .75rem;
+    padding: .7rem .9rem;
+    background: white;
+    color: #0f172a;
+}
+
+textarea {
+    min-height: 7rem;
+    resize: vertical;
+}
+
+label {
+    display: grid;
+    gap: .4rem;
+    font-size: .82rem;
+    font-weight: 700;
+    color: #334155;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .88rem;
+}
+
+th,
+td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: .85rem 1rem;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background: #f8fafc;
+    color: #475569;
+    font-size: .72rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+form.inline {
+    display: inline;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, .06);
+}
+
+.card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, .06);
+    padding: 1.1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.number {
+    margin-top: .35rem;
+    color: #0f172a;
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+.section {
+    margin-bottom: 1.5rem;
+}
+
+.section h2 {
+    margin: 0 0 .8rem;
+    color: #0f172a;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.muted {
+    color: #64748b;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: .25rem .65rem;
+    background: #ccfbf1;
+    color: #115e59;
+    font-size: .75rem;
+    font-weight: 800;
+}
+
+.ok {
+    color: #047857;
+    font-weight: 800;
+}
+
+.no {
+    color: #94a3b8;
+}
+
+.empty,
+.notice,
+.errors {
+    margin-bottom: 1rem;
+    border-radius: .85rem;
+    padding: .85rem 1rem;
+}
+
+.empty {
+    color: #64748b;
+}
+
+.notice {
+    border: 1px solid #a7f3d0;
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.errors {
+    border: 1px solid #fecaca;
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: .75rem;
+    padding: .7rem 1rem;
+    background: #0f766e;
+    box-shadow: 0 14px 28px rgba(15, 118, 110, .18);
+    color: white;
+    font-weight: 800;
+}
+
+.button:hover {
+    background: #115e59;
+}
+
+.action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .75rem;
+    padding: .5rem .75rem;
+    box-shadow: none;
+    font-size: .78rem;
+    font-weight: 900;
+    transition: .15s ease;
+}
+
+.action-primary {
+    background: #0f766e;
+    box-shadow: 0 14px 28px rgba(15, 118, 110, .18);
+    color: white;
+}
+
+.action-primary:hover {
+    background: #115e59;
+}
+
+.action-accept {
+    border: 1px solid #bbf7d0;
+    background: #dcfce7;
+    color: #166534;
+}
+
+.action-accept:hover {
+    background: #16a34a;
+    color: white;
+}
+
+.action-reject,
+.action-delete {
+    border: 1px solid #fecaca;
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.action-reject:hover,
+.action-delete:hover {
+    background: #dc2626;
+    color: white;
+}
+
+.action-detail {
+    border: 1px solid #bae6fd;
+    background: #e0f2fe;
+    color: #075985;
+}
+
+.action-detail:hover {
+    background: #0284c7;
+    color: white;
+}
+
+.action-edit {
+    border: 1px solid #fde68a;
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.action-edit:hover {
+    background: #d97706;
+    color: white;
+}
